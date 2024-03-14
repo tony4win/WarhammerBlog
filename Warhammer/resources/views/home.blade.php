@@ -15,9 +15,9 @@
             <h3>Register</h3>
             <form action="/register" method="POST">
                 @csrf
-                <input type="text" placeholder="username">
-                <input type="text" placeholder="email">
-                <input type="password" placeholder="password">
+                <input type="text" placeholder="Enter Username" name="username">
+                <input type="text" placeholder="Enter Email" name="email">
+                <input type="password" placeholder="Enter Password" name="password">
                 <button>Register</button>
             </form>
         </div>
