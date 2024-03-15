@@ -18,6 +18,14 @@
                 @csrf
                 <button>Logout</button>
             </form>
+            <div>
+                <h2>Create Post</h2>
+                <form action="/create_post" method="POST">
+                    <input type="text" name="title" placeholder="Title">
+                    <textarea name="body" placeholder="Content"></textarea>
+                    <button>Post</button>
+                </form>
+            </div>
         @else
             
         @endauth
