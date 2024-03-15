@@ -11,6 +11,17 @@
         <h1>Home</h1>
     </head>
     <main>
+
+        @auth
+            <p>Login Sucess</p>
+            <form action="/logout" method="POST">
+                @csrf
+                <button>Logout</button>
+            </form>
+        @else
+            
+        @endauth
+
         <div>
             <h3>Register</h3>
             <form action="/register" method="POST">
@@ -21,6 +32,7 @@
                 <button>Register</button>
             </form>
         </div>
+
     </main>
     <footer>
 
