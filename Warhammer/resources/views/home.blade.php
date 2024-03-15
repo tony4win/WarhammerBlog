@@ -33,6 +33,16 @@
             </form>
         </div>
 
+        <div>
+            <h3>Login</h3>
+            <form action="/login" method="POST">
+                @csrf
+                <input type="text" placeholder="Enter Username" name="login_name">
+                <input type="password" placeholder="Enter Password" name="login_password">
+                <button>Login</button>
+            </form>
+        </div>
+
     </main>
     <footer>
 
