@@ -12,4 +12,4 @@ Route::post("/register", [UserController::class, 'register']);
 Route::post("/logout", [UserController::class, 'logout']);
 Route::post("/login", [UserController::class, 'login']);
 
-Route::post('create_post',[PostController::class], 'createPost');
+Route::post('/create-post', [PostController::class, 'createPost']);

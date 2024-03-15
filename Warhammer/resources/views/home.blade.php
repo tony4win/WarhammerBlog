@@ -20,7 +20,8 @@
             </form>
             <div>
                 <h2>Create Post</h2>
-                <form action="/create_post" method="POST">
+                <form action="/create-post" method="POST">
+                    @csrf
                     <input type="text" name="title" placeholder="Title">
                     <textarea name="body" placeholder="Content"></textarea>
                     <button>Post</button>
