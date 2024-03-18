@@ -7,6 +7,12 @@ use App\Models\Post;
 
 class PostController extends Controller
 {
+
+    /** Performs the lookup in DB automatically based on the route num */
+    public function editPost(Post $post){
+        return view('edit_post',['post'=>$post]);
+    }
+
     public function createPost(Request $request){
         $input_fields = $request -> validate([
                 'title' => 'required',

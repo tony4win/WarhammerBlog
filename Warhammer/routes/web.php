@@ -12,8 +12,14 @@ Route::get('/', function () {
     return view('home', ['posts' => $all_posts]);
 });
 
+Route::get('/', function(){
+    $all_posts = Post::where('user_id', auth()->id())->get();
+    return view('home', ['posts' => $all_posts]);
+});
+
 Route::post("/register", [UserController::class, 'register']);
 Route::post("/logout", [UserController::class, 'logout']);
 Route::post("/login", [UserController::class, 'login']);
 
 Route::post('/create-post', [PostController::class, 'createPost']);
+Route::get('/edit_post{post}',[PostController::class, 'editPost']);
