@@ -27,6 +27,16 @@
                     <button>Post</button>
                 </form>
             </div>
+            <!-- div for displaying posts-->
+            <div>
+                <h2>Posts</h2>
+                @foreach($posts as $post)
+                <div>
+                    <h3>{{$post['title']}}</h3>
+                    {{$post['body']}}
+                </div>
+                @endforeach
+            </div>
         @else
             
         @endauth
