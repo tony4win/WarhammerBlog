@@ -10,7 +10,9 @@
 </head>
 <body>
     <head>
-        <h1>Warhammer Blog</h1>
+        <div class = "header-container">
+            <h1>Warhammer Blog</h1>
+        </div>
     </head>
     <main>
 
@@ -28,7 +30,7 @@
                     <button>Post</button>
                 </form>
             </div>
-            <!-- div for displaying posts-->
+
             <div>
                 <h2>Posts</h2>
                 @foreach($posts as $post)
