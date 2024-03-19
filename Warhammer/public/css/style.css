@@ -51,7 +51,7 @@ input,textarea{
     background-image: none;
 }
 
-h1 {
+h1, #header_paragraph {
     font-family: 'Unifraktur', 'Times New Roman', Times, serif;
     color: white;
     background-image: url(../images/header_back.jpg);
@@ -73,7 +73,3 @@ h3, h2{
 p{
     color: white;
 }
-/*
-.post_container{
-
-}*/
