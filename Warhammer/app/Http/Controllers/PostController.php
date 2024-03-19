@@ -18,13 +18,13 @@ class PostController extends Controller
         $this->blockNonUser($post);
         $input_fields = $request->validate([
             'title' => 'required',
-            'bodu' => 'required'
+            'body' => 'required'
         ]);
 
         $input_fields['title'] = strip_tags($input_fields['title']);
         $input_fields['body'] = strip_tags($input_fields['body']);
 
-        $post -> update($input_fields);
+        $post->update($input_fields);
         return redirect('/');
 
     }

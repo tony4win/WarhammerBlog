@@ -23,3 +23,4 @@ Route::post("/login", [UserController::class, 'login']);
 
 Route::post('/create-post', [PostController::class, 'createPost']);
 Route::get('/edit_post/{post}',[PostController::class, 'editPost']);
+Route::put('/edit_post/{post}',[PostController::class, 'updatePost']);
