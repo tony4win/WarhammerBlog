@@ -22,11 +22,12 @@ div{
 }
 
 button {
-    background-color: dimgray;
+    background-color: black;
     cursor: pointer;
     border-radius: 20px;
     color: white;
     border-color: white;
+    font-family: 'Unifraktur', 'Times New Roman', Times, serif;
 }
   
 button:hover {
@@ -68,8 +69,22 @@ h3, h2{
     border-radius: 10px;
     display: inline-block;
     padding: 1%;
+    background-color: black;
 }
 
 p{
     color: white;
+}
+
+#logout_button{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    padding: 5px, 20px;
+    background-color: black;
+}
+
+#logout_button:hover{
+    background-color: white;
+    color: black;
 }

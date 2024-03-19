@@ -20,7 +20,7 @@
         @auth
             <form action="/logout" method="POST">
                 @csrf
-                <button>Logout</button>
+                <button id = "logout_button">Logout</button>
             </form>
             <div>
                 <h2>Create Post</h2>
