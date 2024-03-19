@@ -88,3 +88,15 @@ p{
     background-color: white;
     color: black;
 }
+
+#post_image{
+    height: 7%;
+    width: 5.25%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#post_title{
+    display: inline-block;
+    vertical-align: middle;
+}

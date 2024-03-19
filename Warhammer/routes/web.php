@@ -15,7 +15,7 @@ Route::get('/', function () {
 Route::get('/', function(){
     $all_posts = Post::where('user_id', auth()->id())->get();
     return view('home', ['posts' => $all_posts]);
-});
+}) -> name('home');
 
 Route::post("/register", [UserController::class, 'register']);
 Route::post("/logout", [UserController::class, 'logout']);

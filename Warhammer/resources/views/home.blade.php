@@ -36,7 +36,10 @@
                 <h2>Posts</h2>
                 @foreach($posts as $post)
                 <div class="post_container">
-                    <h3>{{$post['title']}}</h3>
+                    <a href="{{ route('home') }}">
+                        <img src="{{ asset('images/Post_Logo.png') }}" alt="" id="post_image">
+                    </a>
+                    <h3 id="post_title">{{$post['title']}}</h3>
                     <p>{{$post['body']}}</p>
                     <p>Posted by: {{$post->getUser->name}}</p>
                     <p><a href="/edit_post/{{$post->id}}">Edit</a></p>
