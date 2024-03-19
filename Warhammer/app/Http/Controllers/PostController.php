@@ -14,6 +14,13 @@ class PostController extends Controller
         }
     }
 
+    public function deletePost(Post $post){
+        if(auth()->user()->id === $post['user_id']){
+            $post->delete();
+        }
+        return redirect('/');
+    }
+
     public function updatePost(Post $post, Request $request){
         $this->blockNonUser($post);
         $input_fields = $request->validate([
