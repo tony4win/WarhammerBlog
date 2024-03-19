@@ -34,6 +34,7 @@
                 <div>
                     <h3>{{$post['title']}}</h3>
                     {{$post['body']}}
+                    <p>Posted by: {{$post->getUser->name}}</p>
                     <p><a href="/edit_post/{{$post->id}}">Edit</a></p>
                     <form action="/delete_post/{{$post->id}}" method="POST">
                         @csrf
