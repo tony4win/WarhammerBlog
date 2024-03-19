@@ -34,9 +34,9 @@
             <div>
                 <h2>Posts</h2>
                 @foreach($posts as $post)
-                <div>
+                <div class="post_container">
                     <h3>{{$post['title']}}</h3>
-                    {{$post['body']}}
+                    <p>{{$post['body']}}</p>
                     <p>Posted by: {{$post->getUser->name}}</p>
                     <p><a href="/edit_post/{{$post->id}}">Edit</a></p>
                     <form action="/delete_post/{{$post->id}}" method="POST">

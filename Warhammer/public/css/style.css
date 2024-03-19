@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display=swap');
-
+@font-face {
+    font-family: 'Unifraktur';
+    src: url('../fonts/UnifrakturMaguntia-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 /*
 * display: inline-block; - for border size
 * text-align: center; - to center
@@ -14,6 +18,7 @@ div{
     margin: 1%;
     padding: 1%;
     background-image: url(../images/header_back.jpg);
+    border-radius: 10px;
 }
 
 button {
@@ -21,11 +26,13 @@ button {
     cursor: pointer;
     border-radius: 20px;
     color: white;
+    border-color: white;
 }
   
 button:hover {
     background-color: white;
     color:black;
+    border-color: black;
 }
 
 input,textarea{
@@ -45,7 +52,7 @@ input,textarea{
 }
 
 h1 {
-    font-family: 'Unifraktur Maguntia', 'Times New Roman', Times, serif;
+    font-family: 'Unifraktur', 'Times New Roman', Times, serif;
     color: white;
     background-image: url(../images/header_back.jpg);
     border: 2px solid white;
@@ -54,10 +61,19 @@ h1 {
     display: inline-block;
 }
 
-h3{
+h3, h2{
+    font-family: 'Unifraktur', 'Times New Roman', Times, serif;
     color: white;
     border: 2px solid white;
     border-radius: 10px;
     display: inline-block;
     padding: 1%;
 }
+
+p{
+    color: white;
+}
+/*
+.post_container{
+
+}*/
