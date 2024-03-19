@@ -10,12 +10,11 @@
 </head>
 <body>
     <head>
-        <h1>Home</h1>
+        <h1>Warhammer Blog</h1>
     </head>
     <main>
 
         @auth
-            <p>Login Sucess</p>
             <form action="/logout" method="POST">
                 @csrf
                 <button>Logout</button>
@@ -49,7 +48,7 @@
 
         @else
         
-            <div>
+            <div class="cred">
                 <h3>Register</h3>
                 <form action="/register" method="POST">
                     @csrf
@@ -60,7 +59,7 @@
                 </form>
             </div>
 
-            <div>
+            <div class="cred">
                 <h3>Login</h3>
                 <form action="/login" method="POST">
                     @csrf

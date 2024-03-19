@@ -1,5 +1,25 @@
 div{
     border: 2px solid black;
     margin: 1%;
+    padding: 1%;
 }
 
+button {
+    background-color: grey;
+    cursor: pointer;
+    border-radius: 20px;
+}
+  
+button:hover {
+    background-color: white;
+}
+
+input{
+    margin: 5px;
+    display: block;
+}
+
+.cred{
+    width: 30%;
+    margin: 1% auto;
+}
