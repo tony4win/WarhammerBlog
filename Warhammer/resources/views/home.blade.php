@@ -68,9 +68,11 @@
             <div class="cred">
                 <form action="/login" method="POST">
                     @csrf
-                    <input type="text" placeholder="Enter Username" name="login_name">
-                    <input type="password" placeholder="Enter Password" name="login_password">
-                    <button>Login</button>
+                    <input class="center_input" type="text" placeholder="Enter Username" name="login_name">
+                    <br>
+                    <input class="center_input" type="password" placeholder="Enter Password" name="login_password">
+                    <br>
+                    <button class="center_button">Login</button>
                 </form>
             </div>
 

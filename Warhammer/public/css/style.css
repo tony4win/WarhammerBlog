@@ -44,8 +44,10 @@ input,textarea{
 }
 
 .cred{
-    width: 30%;
+    width: 25%;
     margin: 1% auto;
+    text-align: center;
+    padding: 1%;
 }
 
 .header-container {
@@ -128,4 +130,12 @@ p{
 textarea{
     width: 100%;
     height: 30%;
+}
+
+.center_input{
+    display: inline-block;
+}
+
+.center_button{
+    display: inline-block;
 }
