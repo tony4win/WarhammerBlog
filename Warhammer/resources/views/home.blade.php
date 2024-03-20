@@ -78,7 +78,7 @@
 
             <div class="just_button">
                 <form action="/register_page" method="GET">
-                    <button class="special_button" type="submit">Sign Up Now</button>
+                    <button class="special_button" type="submit">Register Now</button>
                 </form>
             </div>
 

@@ -41,6 +41,11 @@ button:hover {
 input,textarea{
     margin: 5px;
     display: block;
+    border-color: black;
+}
+
+input:focus{
+    border-color: white;
 }
 
 .cred{
@@ -114,7 +119,7 @@ p{
 
 .just_button{
     width: 30%;
-    margin: 1% auto;
+    margin: 0% auto;
     text-align: center;
     background-image: none;
     border: none;

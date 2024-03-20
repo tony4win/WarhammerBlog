@@ -17,13 +17,15 @@
     </head>
 
     <div class="cred">
-        <h3>Register</h3>
         <form action="/register" method="POST">
             @csrf
-            <input type="text" placeholder="Enter Username" name="name">
-            <input type="text" placeholder="Enter Email" name="email">
-            <input type="password" placeholder="Enter Password" name="password">
-            <button>Register</button>
+            <input class="center_input" type="text" placeholder="Enter Username" name="name">
+            <br>
+            <input class="center_input" type="text" placeholder="Enter Email" name="email">
+            <br>
+            <input class="center_input" type="password" placeholder="Enter Password" name="password">
+            <br>
+            <button class="center_button" type="submit">Register</button>
         </form>
     </div>
 </body>
