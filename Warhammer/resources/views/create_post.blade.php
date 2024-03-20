@@ -15,6 +15,9 @@
             <textarea name="body" placeholder="Content"></textarea>
             <button>Post</button>
         </form>
+        <form action="/">
+            <button>Cacnle</button>
+        </form>
     </div>
 </body>
 </html>
