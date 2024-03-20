@@ -110,12 +110,19 @@ p{
     background-size: cover;
 }
 
-#singup_div{
+.just_button{
+    width: 30%;
+    margin: 1% auto;
     text-align: center;
+    background-image: none;
+    border: none;
 }
 
-#singup_button{
+.special_button{
     display: inline-block;
+    width: 15%;
+    width: 35%;
+    font-size: x-large;
 }
 
 textarea{

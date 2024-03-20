@@ -15,11 +15,6 @@
         </div>
     </head>
     <main>
-        <div class="cred" id="singup_div">
-            <form action="/about" method="GET">
-                <button id="signup_button" type="submit">About</button>
-            </form>
-        </div>
 
         @auth
 
@@ -71,7 +66,6 @@
         @else
 
             <div class="cred">
-                <h3>Login</h3>
                 <form action="/login" method="POST">
                     @csrf
                     <input type="text" placeholder="Enter Username" name="login_name">
@@ -80,9 +74,15 @@
                 </form>
             </div>
 
-            <div class="cred" id="singup_div">
+            <div class="just_button">
                 <form action="/register_page" method="GET">
-                    <button id="signup_button" type="submit">Sign Up Now</button>
+                    <button class="special_button" type="submit">Sign Up Now</button>
+                </form>
+            </div>
+
+            <div class="just_button">
+                <form action="/about" method="GET">
+                    <button class="special_button" type="submit">About</button>
                 </form>
             </div>
 
