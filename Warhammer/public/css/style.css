@@ -107,3 +107,8 @@ p{
 .post_container{
     background-image: url(../images/post_back.png);
 }
+
+#edit_post_body{
+    background-image: url(../images/edit_post_back.jpg);
+    background-size: cover;
+}
