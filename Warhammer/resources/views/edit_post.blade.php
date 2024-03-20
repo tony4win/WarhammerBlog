@@ -8,7 +8,12 @@
 
 </head>
 <body id="edit_post_body">
-    <h1>Edit Post</h1>
+    <head>
+        <div class = "header-container">
+            <h1>Warhammer Blog</h1></br>
+            <p class="header_paragraph">In the grim darkness of the far future there is only war</p>
+        </div>
+    </head>
     <div>
         <form action="/edit_post/{{$post['id']}}", method="post">
             @csrf
@@ -18,5 +23,12 @@
             <button>Save</button>
         </form>
     </div>
+
+    <div class="just_button">
+        <form action="/" class="post_form">
+            <button>Cancle</button>
+        </form>
+    </div>
+
 </body>
 </html>
