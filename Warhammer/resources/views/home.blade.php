@@ -11,7 +11,7 @@
     <head>
         <div class = "header-container">
             <h1>Warhammer Blog</h1></br>
-            <p id="header_paragraph">In the grim darkness of the far future there is only war</p>
+            <p class="header_paragraph">In the grim darkness of the far future there is only war</p>
         </div>
     </head>
     <main>

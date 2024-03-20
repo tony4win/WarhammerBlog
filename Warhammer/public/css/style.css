@@ -61,7 +61,7 @@ input:focus{
     background-image: none;
 }
 
-h1, #header_paragraph {
+h1, .header_paragraph {
     font-family: 'Unifraktur', 'Times New Roman', Times, serif;
     color: white;
     background-image: url(../images/header_back.jpg);
@@ -143,4 +143,9 @@ textarea{
 
 .center_button{
     display: inline-block;
+}
+
+#about{
+    background-image: url(../images/About_Cover.jpg);
+    background-size: cover;
 }
