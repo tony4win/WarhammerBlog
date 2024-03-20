@@ -18,10 +18,12 @@
     <main>
 
         @auth
+
             <form action="/logout" method="POST">
                 @csrf
                 <button id = "logout_button">Logout</button>
             </form>
+
             <div>
                 <h2>Create Post</h2>
                 <form action="/create-post" method="POST">
@@ -42,16 +44,21 @@
                     <h3 id="post_title">{{$post['title']}}</h3>
                     <p>{{$post['body']}}</p>
                     <p>Posted by: {{$post->getUser->name}}</p>
-                    <p>
-                        <form action="/edit_post/{{$post->id}}" method="GET">
-                            @csrf
-                            <button type="submit">Edit</button>
-                        </form>
-                    </p>
+                    
+                    <form action="/edit_post/{{$post->id}}" method="GET">
+                        @csrf
+                        <button type="submit">Edit</button>
+                    </form>
+                    
                     <form action="/delete_post/{{$post->id}}" method="POST">
                         @csrf
                         @method('DELETE')
                         <button>Delete</button>
+                    </form>
+
+                    <form action="/display_post/{{$post->id}}" method="GET">
+                        @csrf
+                        <button type="submit">Open</button>
                     </form>
                 </div>
                 @endforeach

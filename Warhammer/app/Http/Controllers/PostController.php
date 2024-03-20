@@ -57,4 +57,9 @@ class PostController extends Controller
         Post::create($input_fields);
         return redirect('/');
     }
+
+    public function getPost(Post $post){
+        return view('display_post',['post'=>$post]);
+    }
+
 }
