@@ -16,7 +16,7 @@
             <button>Post</button>
         </form>
         <form action="/">
-            <button>Cacnle</button>
+            <button>Cancle</button>
         </form>
     </div>
 </body>

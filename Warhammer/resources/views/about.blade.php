@@ -41,5 +41,9 @@
               There is no peace amongst the stars, only an eternity of carnage and slaughter, and the laughter of thirsting gods." 
         </p>
     </div>
+
+    <form action="/">
+        <button>Go Back</button>
+    </form>
 </body>
 </html>
