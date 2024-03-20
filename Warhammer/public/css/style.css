@@ -28,9 +28,8 @@ button {
     color: white;
     border-color: white;
     font-family: 'Unifraktur', 'Times New Roman', Times, serif;
-    height: 4%;
-    width: 5%;
     font-size: medium;
+    padding: 2%;
 }
   
 button:hover {
@@ -71,7 +70,7 @@ h3, h2{
     border: 2px solid white;
     border-radius: 10px;
     display: inline-block;
-    padding: 1%;
+    padding: 2%;
     background-color: black;
 }
 

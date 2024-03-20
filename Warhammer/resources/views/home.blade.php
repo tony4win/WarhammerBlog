@@ -79,6 +79,7 @@
                     <button>Login</button>
                 </form>
             </div>
+
         @endauth
 
     </main>

@@ -12,7 +12,7 @@
     <div>
         <form action="/edit_post/{{$post['id']}}", method="post">
             @csrf
-            @method('PUT');
+            @method('PUT')
             <input type="text" name="title" value="{{$post->title}}">
             <textarea name="body" cols="100" rows="10">{{$post->body}}</textarea>
             <button>Save</button>
