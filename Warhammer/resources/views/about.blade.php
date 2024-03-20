@@ -42,8 +42,10 @@
         </p>
     </div>
 
-    <form action="/">
-        <button>Go Back</button>
-    </form>
+    <div class="just_button">
+        <form action="/" class="post_form">
+            <button>Go Back</button>
+        </form>
+    </div>
 </body>
 </html>
