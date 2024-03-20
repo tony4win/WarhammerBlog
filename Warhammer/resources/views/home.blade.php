@@ -42,7 +42,12 @@
                     <h3 id="post_title">{{$post['title']}}</h3>
                     <p>{{$post['body']}}</p>
                     <p>Posted by: {{$post->getUser->name}}</p>
-                    <p><a href="/edit_post/{{$post->id}}">Edit</a></p>
+                    <p>
+                        <form action="/edit_post/{{$post->id}}" method="GET">
+                            @csrf
+                            <button type="submit">Edit</button>
+                        </form>
+                    </p>
                     <form action="/delete_post/{{$post->id}}" method="POST">
                         @csrf
                         @method('DELETE')

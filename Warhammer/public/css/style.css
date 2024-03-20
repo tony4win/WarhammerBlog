@@ -28,6 +28,9 @@ button {
     color: white;
     border-color: white;
     font-family: 'Unifraktur', 'Times New Roman', Times, serif;
+    height: 4%;
+    width: 5%;
+    font-size: medium;
 }
   
 button:hover {
@@ -91,7 +94,7 @@ p{
 
 #post_image{
     height: 7%;
-    width: 5.25%;
+    width: 2.75%;
     display: inline-block;
     vertical-align: middle;
 }
@@ -99,4 +102,8 @@ p{
 #post_title{
     display: inline-block;
     vertical-align: middle;
+}
+
+.post_container{
+    background-image: url(../images/post_back.png);
 }
