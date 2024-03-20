@@ -153,3 +153,7 @@ textarea{
 .form_after_login{
     display: inline;
 }
+
+.post_form{
+    display: inline-block;
+}

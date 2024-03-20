@@ -39,18 +39,18 @@
                     <p>{{$post['body']}}</p>
                     <p>Posted by: {{$post->getUser->name}}</p>
                     
-                    <form action="/edit_post/{{$post->id}}" method="GET">
+                    <form action="/edit_post/{{$post->id}}" method="GET" class="post_form">
                         @csrf
                         <button type="submit">Edit</button>
                     </form>
                     
-                    <form action="/delete_post/{{$post->id}}" method="POST">
+                    <form action="/delete_post/{{$post->id}}" method="POST" class="post_form">
                         @csrf
                         @method('DELETE')
                         <button>Delete</button>
                     </form>
 
-                    <form action="/display_post/{{$post->id}}" method="GET">
+                    <form action="/display_post/{{$post->id}}" method="GET" class="post_form">
                         @csrf
                         <button type="submit">Open</button>
                     </form>
