@@ -6,7 +6,6 @@
     <title>Document</title>
     <link href="{{ asset('/css/style.css') }}" rel="stylesheet">
 
-
 </head>
 <body>
     <head>
@@ -16,6 +15,11 @@
         </div>
     </head>
     <main>
+        <div class="cred" id="singup_div">
+            <form action="/about" method="GET">
+                <button id="signup_button" type="submit">About</button>
+            </form>
+        </div>
 
         @auth
 

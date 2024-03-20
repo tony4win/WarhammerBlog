@@ -23,6 +23,9 @@ Route::post("/login", [UserController::class, 'login']);
 
 Route::get("/register_page", [UserController::class, 'getRegisterPage']);
 Route::get("/display_post/{post}",[PostController::class, 'getPost']);
+Route::get("/about", function(){
+    return view('/about');
+});
 
 Route::post('/create-post', [PostController::class, 'createPost']);
 Route::get('/edit_post/{post}',[PostController::class, 'editPost']);
