@@ -41,6 +41,7 @@ class PostController extends Controller
         $this->blockNonUser($post);
         return view('edit_post',['post'=>$post]);
     }
+    
 
     public function createPost(Request $request){
         $input_fields = $request -> validate([

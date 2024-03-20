@@ -28,6 +28,10 @@ class UserController extends Controller{
         return redirect('/');
     }
 
+    public function getRegisterPage(){
+        return view('register');
+    }
+
     public function register(Request $request){
         $input_fields = $request -> validate(
             [

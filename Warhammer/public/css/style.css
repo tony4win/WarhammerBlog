@@ -111,3 +111,11 @@ p{
     background-image: url(../images/edit_post_back.jpg);
     background-size: cover;
 }
+
+#singup_div{
+    text-align: center;
+}
+
+#singup_button{
+    display: inline-block;
+}
