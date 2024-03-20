@@ -29,7 +29,6 @@
             </form>
 
             <div>
-                <h2>Posts</h2>
                 @foreach($posts as $post)
                 <div class="post_container">
                     <a href="{{ route('home') }}">

@@ -3,8 +3,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Post</title>
+    <title>Document</title>
     <link href="{{ asset('/css/style.css') }}" rel="stylesheet">
+
 </head>
 <body>
     <div class="post_container">
@@ -15,13 +16,5 @@
         <p>{{$post['body']}}</p>
         <p>Posted by: {{$post->getUser->name}}</p>
     </div>
-    <form action="/add_comment/{{$post->id}}" class="post_form" method="POST">
-        @csrf
-        <button>Add Comment</button>
-    </form>
-    <form action="/" class="post_form">
-        <button>Go Back</button>
-    </form>
-
 </body>
 </html>

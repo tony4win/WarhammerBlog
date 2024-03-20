@@ -66,4 +66,8 @@ class PostController extends Controller
         return view('create_post');
     }
 
+    public function open_comment(Post $post){
+        return view('comment',['post'=>$post]);
+    }
+
 }
