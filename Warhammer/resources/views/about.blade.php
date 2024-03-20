@@ -13,6 +13,11 @@
             There is no peace amongst the stars, only an eternity of carnage and slaughter.
         </p>
     </div>
+
+    <div id="about_image_div">
+        <img id="about_image" src="{{ asset('/images/chaosStar.png') }}" alt="">
+    </div>
+
     <div>
         <p>
             "It is the 41st Millennium. For more than a hundred centuries the Emperor of Mankind has sat immobile on the Golden Throne of

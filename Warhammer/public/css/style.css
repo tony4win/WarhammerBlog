@@ -148,6 +148,7 @@ textarea{
 #about{
     background-image: url(../images/About_Cover.jpg);
     background-size: cover;
+    background-position: left center;
 }
 
 .form_after_login{
@@ -156,4 +157,17 @@ textarea{
 
 .post_form{
     display: inline-block;
+}
+
+#about_image_div{
+    width: 30%;
+    margin: 0% auto;
+    text-align: center;
+    background-image: none;
+    border: none;
+}
+
+#about_image{
+    width: 37.5%; /*25*/
+    height: 22.5%; /*15*/
 }
