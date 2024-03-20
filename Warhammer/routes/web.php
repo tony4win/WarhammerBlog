@@ -26,6 +26,7 @@ Route::get("/display_post/{post}",[PostController::class, 'getPost']);
 Route::get("/about", function(){
     return view('/about');
 });
+Route::get("/create_page", [PostController::class, 'open_create_page']);
 
 Route::post('/create-post', [PostController::class, 'createPost']);
 Route::get('/edit_post/{post}',[PostController::class, 'editPost']);

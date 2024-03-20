@@ -85,13 +85,13 @@ p{
     color: white;
 }
 
-#logout_button{
+.button_after_login{
     font-size: 20px;
     padding: 5px, 20px;
     background-color: black;
 }
 
-#logout_button:hover{
+.button_after_login:hover{
     background-color: white;
     color: black;
 }
@@ -148,4 +148,8 @@ textarea{
 #about{
     background-image: url(../images/About_Cover.jpg);
     background-size: cover;
+}
+
+.form_after_login{
+    display: inline;
 }

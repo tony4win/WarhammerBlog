@@ -62,4 +62,8 @@ class PostController extends Controller
         return view('display_post',['post'=>$post]);
     }
 
+    public function open_create_page(){
+        return view('create_post');
+    }
+
 }

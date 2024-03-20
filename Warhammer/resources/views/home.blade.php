@@ -18,20 +18,15 @@
 
         @auth
 
-            <form action="/logout" method="POST">
+            <form action="/logout" method="POST" class="form_after_login">
                 @csrf
-                <button id = "logout_button">Logout</button>
+                <button class = "button_after_login">Logout</button>
             </form>
 
-            <div>
-                <h2>Create Post</h2>
-                <form action="/create-post" method="POST">
-                    @csrf
-                    <input type="text" name="title" placeholder="Title">
-                    <textarea name="body" placeholder="Content"></textarea>
-                    <button>Post</button>
-                </form>
-            </div>
+            <form action="/create_page" method="GET" class="form_after_login">
+                @csrf
+                <button class = "button_after_login" type="submit">Create Post</button>
+            </form>
 
             <div>
                 <h2>Posts</h2>
