@@ -13,7 +13,9 @@ Route::get('/', function () {
 });
 
 Route::get('/', function(){
-    $all_posts = Post::where('user_id', auth()->id())->get();
+    /** $all_post = Post::all(); */
+    /** -> latest() gets them by latest first */
+    $all_posts = Post::where('user_id', auth()->id())->latest()->get();
     return view('home', ['posts' => $all_posts]);
 }) -> name('home');
 
