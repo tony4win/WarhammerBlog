@@ -171,3 +171,7 @@ textarea{
     width: 37.5%; /*25*/
     height: 22.5%; /*15*/
 }
+
+.post_input{
+    padding: 3%;
+}

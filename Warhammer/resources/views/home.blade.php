@@ -41,18 +41,18 @@
                     
                     <form action="/edit_post/{{$post->id}}" method="GET" class="post_form">
                         @csrf
-                        <button type="submit">Edit</button>
+                        <button class="post_input" type="submit">Edit</button>
                     </form>
                     
                     <form action="/delete_post/{{$post->id}}" method="POST" class="post_form">
                         @csrf
                         @method('DELETE')
-                        <button>Delete</button>
+                        <button class="post_input">Delete</button>
                     </form>
 
                     <form action="/display_post/{{$post->id}}" method="GET" class="post_form">
                         @csrf
-                        <button type="submit">Open</button>
+                        <button class="post_input" type="submit">Open</button>
                     </form>
                 </div>
                 @endforeach
