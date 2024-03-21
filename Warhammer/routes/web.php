@@ -5,15 +5,15 @@ use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Post;
 
+/* Display all users
 Route::get('/', function () {
     // grab all data
     $all_posts = Post::all();
     // 'posts' can be accessed in the blade template
     return view('home', ['posts' => $all_posts]);
-});
+});*/
 
 Route::get('/', function(){
-    /** $all_post = Post::all(); */
     /** -> latest() gets them by latest first */
     $all_posts = Post::where('user_id', auth()->id())->latest()->get();
     return view('home', ['posts' => $all_posts]);
